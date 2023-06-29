@@ -1,10 +1,14 @@
-﻿using System.IO;
-using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Program
+    public class Cars
     {
+
         //Parts of a class:
         //Access Modifier Keywords - OPTIONAL
         //class Keyword - REQUIRED
@@ -24,21 +28,8 @@ namespace Classes
         //Set values in the properties for the object
         //Print the values of each property to the Console
 
-        static void Main(string[] args)
-        {
-            var mycar = new Cars();
-            mycar.Make = "Toyota";
-            mycar.Model = "Corolla";
-            mycar.Year = 1999;
-            Console.WriteLine("Here are the properties for my new car class");
-            
-            //Console.WriteLine($"The make of mycar is {mycar.Make}");
-            //Console.WriteLine($"The model of mycar is {mycar.Model}");
-            //Console.WriteLine($"The Year of mycar is {mycar.Year}");
-            Console.WriteLine($"The Make, Model and Year of My car is: {mycar.Make} {mycar.Model} {mycar.Year}");
-
-            }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
     }
-
- 
 }
